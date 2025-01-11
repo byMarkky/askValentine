@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ask for valentine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="h-max bg-[#F3F6F6]">
+    
+    <p class="w-full text-4xl font-bold mt-4 text-center text-[#A888B5]">We will go to ...</p>
+
+    <form action="/thanks" class="flex flex-col items-center">
+        <div class="w-full h-min flex flex-wrap items-center justify-center pt-4">
+            
+            <!-- Cine -->
+            <div class="mt-4 mx-4 text-center">
+                <div class="inline-block rounded-full border-4 border-[#8174A0] p-1">
+                <img 
+                    src="images/activities/cine.jpg" 
+                    alt="Rounded Example" 
+                    class="rounded-full w-32 h-32 object-cover"
+                >
+                </div>
+                <p class="flex justify-center items-center mt-4 text-lg font-semibold text-[#8174A0]">
+                    <input class="size-6 mr-2" type="checkbox" name="activitie" value="cine"/>
+                    Cinema
+                </p>
+            </div>
+
+            <!-- Arcade -->
+            <div class="mt-4 mx-4 text-center">
+                <div class="inline-block rounded-full border-4 border-[#8174A0] p-1">
+                <img 
+                    src="images/activities/arcade.jpg" 
+                    alt="Rounded Example" 
+                    class="rounded-full w-32 h-32 object-cover"
+                >
+                </div>
+                <p class="flex justify-center items-center mt-4 text-lg font-semibold text-[#8174A0]">
+                    <input class="size-6 mr-2" type="checkbox" name="activitie" value="arcade"/>
+                    Arcade
+                </p>
+            </div>
+            <!-- Museo -->
+            <div class="mt-4 mx-4 text-center">
+                <div class="inline-block rounded-full border-4 border-[#8174A0] p-1">
+                <img 
+                    src="images/activities/museo.jpg" 
+                    alt="Rounded Example" 
+                    class="rounded-full w-32 h-32 object-cover"
+                >
+                </div>
+                <p class="flex justify-center items-center mt-4 text-lg font-semibold text-[#8174A0]">
+                    <input class="size-6 mr-2" type="checkbox" name="activitie" value="museo"/>
+                    Museum
+                </p>
+            </div>
+            <!-- Paseo -->
+            <div class="mt-4 mx-4 text-center">
+                <div class="inline-block rounded-full border-4 border-[#8174A0] p-1">
+                <img 
+                    src="images/activities/paseo.jpg" 
+                    alt="Rounded Example" 
+                    class="rounded-full w-32 h-32 object-cover"
+                >
+                </div>
+                <p class="flex justify-center items-center mt-4 text-lg font-semibold text-[#8174A0]">
+                    <input class="size-6 mr-2" type="checkbox" name="activitie" value="paseo"/>
+                    Park Walk
+                </p>
+            </div>
+            <!-- Legos -->
+            <div class="mt-4 mx-4 text-center">
+                <div class="inline-block rounded-full border-4 border-[#8174A0] p-1">
+                <img 
+                    src="images/activities/legos.jpg" 
+                    alt="Rounded Example" 
+                    class="rounded-full w-32 h-32 object-cover"
+                >
+                </div>
+                <p class="flex justify-center items-center mt-4 text-lg font-semibold text-[#8174A0]">
+                    <input class="size-6 mr-2" type="checkbox" name="activitie" value="legos"/>
+                    Lego's
+                </p>
+            </div>
+            <!-- Juegos -->
+            <div class="mt-4 mx-4 text-center">
+                <div class="inline-block rounded-full border-4 border-[#8174A0] p-1">
+                <img 
+                    src="images/activities/games.jpg" 
+                    alt="Rounded Example" 
+                    class="rounded-full w-32 h-32 object-cover"
+                >
+                </div>
+                <p class="flex justify-center items-center mt-4 text-lg font-semibold text-[#8174A0]">
+                    <input class="size-6 mr-2" type="checkbox" name="activitie" value="juegos"/>
+                    Video games
+                </p>
+            </div>
+
+        </div>
+        
+        <button type="submit" class="w-fit h-fit mt-14 py-2 px-4 text-white font-semibold rounded-lg bg-[#A888B5] duration-[300ms] hover:bg-[#FFD2A0]">Confirm</button>
+    </form>
+
+    <script>
+        const params = new URLSearchParams(window.location.search)
+        const dessert = params.getAll("dessert")
+        sessionStorage.setItem("dessert", dessert)
+    </script>
+
+</body>
+</html>

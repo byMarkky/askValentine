@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ask for valentine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="h-screen bg-[#F3F6F6]">
+    
+    <p class="w-full text-4xl font-bold mt-4 text-center text-[#A888B5]">What we gonna eat?</p>
+
+    <form action="/desserts" class="flex flex-col items-center">
+        
+        <div class="w-full h-min flex flex-wrap items-center justify-center pt-4">
+            <!-- Burger -->
+            <div class="mt-4 mx-4 text-center">
+                <div class="inline-block rounded-full border-4 border-[#8174A0] p-1">
+                <img 
+                    src="images/foods/burger.jpg" 
+                    alt="Rounded Example" 
+                    class="rounded-full w-32 h-32 object-cover"
+                >
+                </div>
+                <p class="flex justify-center items-center mt-4 text-lg font-semibold text-[#8174A0]">
+                    <input class="size-6 mr-2" type="checkbox" name="food" value="burgers"/>
+                    Burgers
+                </p>
+            </div>
+            <!-- Pasta -->
+            <div class="mt-4 mx-4 text-center">
+                <div class="inline-block rounded-full border-4 border-[#8174A0] p-1">
+                <img 
+                    src="images/foods/pasta.jpg" 
+                    alt="Rounded Example" 
+                    class="rounded-full w-32 h-32 object-cover"
+                >
+                </div>
+                <p class="flex justify-center items-center mt-4 text-lg font-semibold text-[#8174A0]">
+                    <input class="size-6 mr-2" type="checkbox" name="food" value="pasta"/>
+                    Pasta
+                </p>
+            </div>
+            <!-- Pizza -->
+            <div class="mt-4 mx-4 text-center">
+                <div class="inline-block rounded-full border-4 border-[#8174A0] p-1">
+                <img 
+                    src="images/foods/pizza.jpg" 
+                    alt="Rounded Example" 
+                    class="rounded-full w-32 h-32 object-cover"
+                >
+                </div>
+                <p class="flex items-center justify-center mt-4 text-lg font-semibold text-[#8174A0]">
+                    <input class="size-6 mr-2" type="checkbox" name="food" value="pizza"/>
+                    Pizza
+                </p>
+            </div>
+            <!-- Sushi -->
+            <div class="mt-4 mx-4 text-center">
+                <div class="inline-block rounded-full border-4 border-[#8174A0] p-1">
+                <img 
+                    src="images/foods/sushi.jpg" 
+                    alt="Rounded Example" 
+                    class="rounded-full w-32 h-32 object-cover"
+                >
+                </div>
+                <p class="flex items-center justify-center mt-4 text-lg font-semibold text-[#8174A0]">
+                    <input class="size-6 mr-2" type="checkbox" name="food" value="sushi"/>
+                    Sushi
+                </p>
+            </div>
+            <!-- Korean -->
+            <div class="mt-4 mx-4 text-center">
+                <div class="inline-block rounded-full border-4 border-[#8174A0] p-1">
+                <img 
+                    src="images/foods/korean.jpg" 
+                    alt="Rounded Example" 
+                    class="rounded-full w-32 h-32 object-cover"
+                >
+                </div>
+                <p class="flex items-center justify-center mt-4 text-lg font-semibold text-[#8174A0]">
+                    <input class="size-6 mr-2" type="checkbox" name="food" value="korean"/>
+                    Korean
+                </p>
+            </div>
+            <!-- Hot Pot -->
+            <div class="mt-4 mx-4 text-center">
+                <div class="inline-block rounded-full border-4 border-[#8174A0] p-1">
+                <img 
+                    src="images/foods/hotpot.jpg" 
+                    alt="Rounded Example" 
+                    class="rounded-full w-32 h-32 object-cover"
+                >
+                </div>
+                <p class="flex items-center justify-center mt-4 text-lg font-semibold text-[#8174A0]">
+                    <input class="size-6 mr-2" type="checkbox" name="food" value="hotpod"/>
+                    Hot Pod
+                </p>
+            </div>
+        </div>
+
+        <button type="submit" class="w-fit h-fit mt-14 py-2 px-4 text-white font-semibold rounded-lg bg-[#A888B5] duration-[300ms] shadow-sm shadow-[#A888B5] hover:shadow-none hover:bg-[#FFD2A0]">Confirm</button>
+    </form>
+
+</body>
+</html>

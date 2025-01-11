@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ask for valentine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="h-max bg-[#F3F6F6]">
+    
+    <p class="w-full text-4xl font-bold mt-4 text-center text-[#A888B5]">Desserts</p>
+
+    <form action="/activities" class="flex flex-col items-center">
+        <div class="w-full h-min flex flex-wrap items-center justify-center pt-4">
+            <!-- Bubble Tea -->
+            <div class="mt-4 mx-4 text-center">
+                <div class="inline-block rounded-full border-4 border-[#8174A0] p-1">
+                <img 
+                    src="images/desserts/bubble.jpg" 
+                    alt="Rounded Example" 
+                    class="rounded-full w-32 h-32 object-cover"
+                >
+                </div>
+                <p class="flex items-center justify-center mt-4 text-lg font-semibold text-[#8174A0]">
+                    <input class="size-6 mr-2" type="checkbox" name="dessert" value="bubble"/>
+                    Bubble Tea
+                </p>
+            </div>
+
+            <!-- Churros -->
+            <div class="mt-4 mx-4 text-center">
+                <div class="inline-block rounded-full border-4 border-[#8174A0] p-1">
+                <img 
+                    src="images/desserts/churros.jpg" 
+                    alt="Rounded Example" 
+                    class="rounded-full w-32 h-32 object-cover"
+                >
+                </div>
+                <p class="flex items-center justify-center mt-4 text-lg font-semibold text-[#8174A0]">
+                    <input class="size-6 mr-2" type="checkbox" name="dessert" value="churros"/>
+                    Churros
+                </p>
+            </div>
+            <!-- Matcha -->
+            <div class="mt-4 mx-4 text-center">
+                <div class="inline-block rounded-full border-4 border-[#8174A0] p-1">
+                <img 
+                    src="images/desserts/matcha.jpg" 
+                    alt="Rounded Example" 
+                    class="rounded-full w-32 h-32 object-cover"
+                >
+                </div>
+                <p class="flex items-center justify-center mt-4 text-lg font-semibold text-[#8174A0]">
+                    <input class="size-6 mr-2" type="checkbox" name="dessert" value="matcha"/>
+                    Matcha
+                </p>
+            </div>
+            <!-- Mochis -->
+            <div class="mt-4 mx-4 text-center">
+                <div class="inline-block rounded-full border-4 border-[#8174A0] p-1">
+                <img 
+                    src="images/desserts/mochi.jpg" 
+                    alt="Rounded Example" 
+                    class="rounded-full w-32 h-32 object-cover"
+                >
+                </div>
+                <p class="flex items-center justify-center mt-4 text-lg font-semibold text-[#8174A0]">
+                    <input class="size-6 mr-2" type="checkbox" name="dessert" value="mochis"/>
+                    Mochis
+                </p>
+            </div>
+            <!-- Takoyakis -->
+            <div class="mt-4 mx-4 text-center">
+                <div class="inline-block rounded-full border-4 border-[#8174A0] p-1">
+                <img 
+                    src="images/desserts/takoyakis.jpg" 
+                    alt="Rounded Example" 
+                    class="rounded-full w-32 h-32 object-cover"
+                >
+                </div>
+                <p class="flex items-center justify-center mt-4 text-lg font-semibold text-[#8174A0]">
+                    <input class="size-6 mr-2" type="checkbox" name="dessert" value="takoyakis"/>
+                    Takoyakis
+                </p>
+            </div>
+        </div>
+
+        <button type="submit" class="w-fit h-fit mt-14 py-2 px-4 text-white font-semibold rounded-lg bg-[#A888B5] shadow-sm shadow-[#A888B5] duration-[300ms] hover:shadow-none hover:bg-[#FFD2A0]">Confirm</button>
+    </form>
+
+    <script>
+        const params = new URLSearchParams(window.location.search)
+        const food = params.getAll("food");
+        sessionStorage.setItem("food", food)
+    </script>
+
+</body>
+</html>

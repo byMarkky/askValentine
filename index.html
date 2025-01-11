@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ask for valentine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="h-screen bg-[#F3F6F6]">
+    
+    <div class=" h-full flex flex-col items-center justify-center space-y-4">
+        <b class="text-6xl text-center text-[#8174A0]">Will you be my valentine?</b>
+
+        <br>
+        <form action="http://localhost:3000/date" class="flex flex-col items-center justify-center space-y-4">
+            <button id="yesButton" class="w-fit h-auto text-white text-2xl px-8 py-2 transition-colors duration-[300ms] hover:bg-[#FFD2A0] rounded-lg bg-[#EFB6C8]">Yes :D</button>
+            <button id="otherYesBtn" style="display: none;" class="w-fit h-auto text-white text-2xl px-8 py-2 transition-colors duration-[300ms] hover:bg-[#FFD2A0] rounded-lg bg-[#EFB6C8]">Yes :D</button>
+        </form>
+        <button id="noButton" class="w-fit text-white text-2xl px-8 py-2 transition-colors duration-[300ms] hover:bg-[#F06C79] rounded-lg bg-[#A888B5]">Nope 😢</button>
+
+        <img class="size-60 rounded-lg" src="images/hamster.gif" alt="please">
+    </div>
+
+    <script>
+        const button = document.getElementById("noButton");
+        const otherYes = document.getElementById("otherYesBtn");
+        button.addEventListener("click", () => {
+            
+            otherYes.style.display = "block";
+            button.style.display = "none";
+            
+        });
+    </script>
+</body>
+</html>

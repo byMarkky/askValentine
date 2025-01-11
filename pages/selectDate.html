@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ask for valentine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="h-screen bg-[#F3F6F6]">
+    
+    <div class=" h-full flex flex-col items-center justify-center space-y-4">
+        <label class="text-4xl font-semibold text-center text-[#8174A0]">Let's goooo🥳</label>
+        <img class="rounded-xl shadow-md" src="images/neymar.jpeg" />
+        <form action="/foods">
+            <label class="text-4xl text-center text-[#8174A0]">Are you free on ... </label>
+            <div class="flex flex-col items-center space-y-4 mt-4">
+                <input id="datePicker" type="date" class="w-fit h-fit p-2 font-semibold text-white rounded-lg bg-[#EFB6C8] border duration-[200ms] hover:border-[#A888B5]">
+                <button type="submit" onclick="confirm()" class="w-fit h-fit py-2 px-4 text-white font-semibold rounded-lg bg-[#A888B5] shadow-sm shadow-[#A888B5] duration-[300ms] hover:shadow-none hover:bg-[#FFD2A0]">Confirm</button>
+            </div>
+            
+        </form>
+    </div>
+
+    <script>
+        const datePicker = document.getElementById("datePicker");
+        datePicker.valueAsDate = new Date();
+        
+        function confirm() { sessionStorage.setItem("date", datePicker.value) }
+    </script>
+</body>
+</html>
